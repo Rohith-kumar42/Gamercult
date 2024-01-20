@@ -46,6 +46,8 @@ a :hover{
   transition: all 150ms ease-in;
 }
 }
+/* Make the rule more specific */
+
 
 .navbar-nav li:hover>.dropdown-menu {
   display: block;
