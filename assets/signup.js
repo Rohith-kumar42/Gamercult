@@ -43,13 +43,13 @@ function validateForm() {
     let phoneError = document.getElementById("error3");
     let passwordError = document.getElementById("error4");
   
-    // Reset previous error messages
+  // Reset previous error messages
     usernameError.textContent = "";
     emailError.textContent = "";
     phoneError.textContent = "";
     passwordError.textContent = "";
   
-    // Check for empty username
+  // Check for empty username
     if (username == "" || username.length < 5) {
       usernameError.textContent = "Please enter a username.\n";
       usernameError.style.color = "#1999ff";
@@ -68,9 +68,9 @@ function validateForm() {
       usernameError.style.fontWeight = "bold";
       return false; // Prevent form submission
     }
-    // Add other username validations as needed
+  // Add other username validations as needed
   
-    // Check for empty email
+  // Check for empty email
     if (email == "") {
         emailError.textContent = "Please enter an email address.\n";
         emailError.style.color = "#1999ff";
@@ -85,9 +85,9 @@ function validateForm() {
         return false; // Prevent form submission
       }
       
-    // Add other email validations as needed
+  // Add other email validations as needed
   
-    // Check for empty phone
+  // Check for empty phone
     if (phone == "") {
         phoneError.textContent = "Phone Number must be filled out.\n";
         phoneError.style.color = "#1999ff";
@@ -101,7 +101,7 @@ function validateForm() {
         return false; // Prevent form submission
       }
       
-      // Check if phone number doesn't contain alphabets
+    // Check if phone number doesn't contain alphabets
       const alphabetRegex = /[a-zA-Z]/;
       if (alphabetRegex.test(phone)) {
         phoneError.textContent = "Phone Number must not contain alphabets.\n";
@@ -110,9 +110,9 @@ function validateForm() {
         return false; // Prevent form submission
       }
       
-    // Add other phone validations as needed
+  // Add other phone validations as needed
   
-    // Check for empty password
+  // Check for empty password
     if (password == "") {
       passwordError.textContent = "Password must be filled out.\n";
       passwordError.style.color = "#1999ff";
@@ -120,19 +120,19 @@ function validateForm() {
       return false; // Prevent form submission
     }
   
-    // Add other password validations as needed
+  // Add other password validations as needed
   
-    // If all validations pass, allow form submission
+  // If all validations pass, allow form submission
     return true;
   }
   function clearInput() {
-    // Clear input fields
+  // Clear input fields
     document.getElementById("username").value = "";
     document.getElementById("email").value = "";
     document.getElementById("phone").value = "";
     document.getElementById("password").value = "";
 
-    // Clear error messages
+  // Clear error messages
     document.getElementById("error1").textContent = "";
     document.getElementById("error2").textContent = "";
     document.getElementById("error3").textContent = "";

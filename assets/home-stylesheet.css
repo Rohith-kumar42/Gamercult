@@ -9,7 +9,10 @@
   width: 176px;
   height: 44px;
 }
-
+body{
+  font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif
+                                                
+}
 a {
   text-decoration: none;
 }
@@ -44,6 +47,7 @@ a :hover{
   -ms-transition: all 150ms ease-in;
   -o-transition: all 150ms ease-in;
   transition: all 150ms ease-in;
+  width: 20px;
 }
 }
 /* Make the rule more specific */

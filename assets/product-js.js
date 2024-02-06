@@ -25,16 +25,16 @@ function openNav() {
     let phoneError = document.getElementById("error3");
     let passwordError = document.getElementById("error4");
 
-    // Reset previous error messages
+  // Reset previous error messages
     usernameError.textContent = "";
     emailError.textContent = "";
     phoneError.textContent = "";
     passwordError.textContent = "";
 
-    // Check for empty username
-    // ... (existing username validations)
+  // Check for empty username
+  // ... (existing username validations)
 
-    // Check for empty email
+  // Check for empty email
     if (email == "") {
         emailError.textContent = "Please enter an email address.\n";
         emailError.style.color = "#1999ff";
@@ -49,10 +49,10 @@ function openNav() {
         return false; // Prevent form submission
     }
 
-    // Add other email validations as needed
-    // For example, you can check for a valid email format using a regular expression
+  // Add other email validations as needed
+  // For example, you can check for a valid email format using a regular expression
 
-    // Check for empty password
+  // Check for empty password
     if (password == "") {
         passwordError.textContent = "Password must be filled out.\n";
         passwordError.style.color = "#1999ff";
@@ -60,9 +60,9 @@ function openNav() {
         return false; // Prevent form submission
     }
 
-    // Add other password validations as needed
-    // For example, you can check for minimum length, special characters, etc.
+  // Add other password validations as needed
+  // For example, you can check for minimum length, special characters, etc.
 
-    // If all validations pass, allow form submission
+  // If all validations pass, allow form submission
     return true;
 }
