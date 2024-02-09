@@ -3,15 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="icon" type="image/png" href="../assets/Images/Gamer_cult.png" style="width: 150%;"> 
-<!-- Bootstrap JS and Popper.js -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-U6PhW9DWGBKn3m6eTBRyO4uNYVgrKb55lRFQZrJEJw0NLeSt1ftA6J9i1uefe1ab" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjL5eDXQBlFKwJx7+Woe8eKkPxYTja4pF5fOfuxU4S+70s/pbMwXZcPcU7viyBTK" crossorigin="anonymous"></script>
-
         <link rel="stylesheet" href="../assets/product-stylesheet.css">
+        <link rel="icon" type="image/png" href="../assets/Images/Gamer_cult.png" style="width: 150%;"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -61,7 +54,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button> -->
         <div class="mx-auto bg">
-            <a class="float-left" href="home.html"><img
+            <a class="float-left" href="../Home/home.html"><img
                 class="logoBig" src="../assets/Images/Gamer cult.png"></a>
             
             <!-- Navbar links -->
@@ -99,35 +92,110 @@
             </div>
         </div>
 
-      
-
           </nav>
-          <style>
-   body{
-            /* background: linear-gradient(to right, #1b2838, #020b21); */
-            background-color: #0e1014;
-          }
- 
-
-    h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 300px;
-        margin: 0;
-        background-color: black;
-        
-       
-        
-    }
-
-          </style>
     </head>
-    <body>
-       <div class="loader"></div> */
+    
+    <body id="body" style="background-color: #1b2838;">
+        <div class="bg">
+            <!--Game Highlights Container-->
+            <div id="game-highlight-div" class="container" style=" width: 60%; height: 470px; position: relative; background-color: #0e151d; padding: 0px;">
+                <div style="float: left; width: 60%; height: 100%;"
+         id="demo" class="carousel slide carousel-fade vid-carousel" data-ride="carousel" data-interval="false">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active" style="background-image: url(../assets/Images/fifac.jpg);"></li>
+            <li data-target="#demo" data-slide-to="1" style="background-image: url(../assets/Images/fifa1.jpg);"></li>
+            <li data-target="#demo" data-slide-to="2" style="background-image: url(../assets/Images/fifa2.jpg);"></li>
+            <li data-target="#demo" data-slide-to="3" style="background-image: url(../assets/Images/fifa3.jpg);"></li>
+          </ul>
+          
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video controls autoplay muted id="myVideo" width="100%" height="100%">
+                    <source src="../assets/Videos/EA SPORTS FC 24 _ Official Gameplay Trailer.mp4" type="video/mp4">
+                  </video>
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/Images/fifa1.jpg">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/Images/fifa2.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/Images/fifa3.jpg">
+              </div>
+          </div>
+          
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+
+        <div id="game-highlight" style="display: inline-block; width: 40%; height: 100%; padding-left: 1%;">
+            <img class="game_header_image_full" src="../assets/Images/fifac.jpg"
+            style="width: 100%;">
+            <p class="smallFont">
+                EA SPORTS FC™ 24 welcomes you to The World’s Game: the most true-to-football experience ever with HyperMotionV, PlayStyles optimised by Opta, and an enhanced Frostbite™ Engine.                <p class="tinyFont">
+                    RELEASE DATE: &#160; &#160; &#160; &#160; &#160; &#160;
+                    
+28 Sep, 2023
+                    <br>
+                    DEVELOPER: &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; 
+                    
+EA Canada & EA Romania
+                    <br>
+                    PUBLISHER: &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;
+                    
+Electronic Arts
+                </p>
+            </p>
+        </div>
+
+                
+        </div>
+
+        <div class="container" id="game-price" style="
+        width: 60%; height: 80px; background-image: linear-gradient(to right, rgb(45, 61, 74) , rgb(87, 101, 116));">
+            <div class="smallFont" style="display: inline-block; font-weight: 600; font-size: 20px; padding-left: 5px; margin-top: 25px;">
+                Purchase    EA FC24
+            </div>
+            
+            <div id="price" style="background-color: black; float: right; padding: 5px; margin-top: 20px;">
+                    <span style="color: #c5d3de; position: relative; top: 8px; padding-right: 12px;">₹2000 RUP</span>
+
+                <div id="btn-buy" style="float: right;">
+                    <a href="../Pages/otpverification.php">
+                      <button type="button" class="btn btn-success"><span>Buy Game</span></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="sysreq" style="display: inline-block; border-bottom: 1px; border-color: #3a6e8b; border-style: solid; border-top: 0px;
+        border-left: 0px; border-right: 0px; margin-left: 20%;">
+          <span class="smallFont">
+            System Requirements &#160; &#160;
+          </span>
+          <br>
+          <div id="req-type" class="smallFont">
+            <span class="dimFont">OS: </span> Windows 10 - 64-Bit. <br>
+            <span class="dimFont">Processor: </span>Intel Core i5-6600K @ 3.50GHz or AMD Ryzen 5 1600 @ 3.2 GHZ. <br>
+            <span class="dimFont">Memory: </span>8 GB RAM. <br>
+            <span class="dimFont">Graphics: </span>NVIDIA GeForce GTX 1050 Ti 4GB or AMD Radeon RX 570 4GB. <br>
+            <span class="dimFont">DirectX: </span>Version 9.0c <br>
+            <span class="dimFont">Storage: </span>100 GBavailable space <br>
+          </div>
+
+        </div>
        
-       
-        <h2 style="color: white;text-align: center;margin-top: 200px;">
-            Sorry, this account does not have any playtime this year.
-        </h2>
+
+        </div>
     </body>
+
+</html>
