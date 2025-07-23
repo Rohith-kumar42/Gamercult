@@ -18,11 +18,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
 
     // Redirect the user to a success page or perform any other action
-    header("Location: home.html");
+    header("Location: Home.html");
     exit();
 } else {
     // If the form is not submitted, redirect back to the form page
-    header("Location: index.html");
+    header("Location: ../index.html");
     exit();
 }
 ?>
